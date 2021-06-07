@@ -12,15 +12,14 @@ namespace Domain.Entities
         public int Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        public DateTimeOffset EventStart { get; set; }
 
         public Post()
         {
 
         }
-        public Post(int id, string title, string content, DateTimeOffset eventStart)
+        public Post(int id, string title, string content)
         {
-            (Id, Title, Content, EventStart) = (id, title, content, eventStart);
+            (Id, Title, Content) = (id, title, content);
         }
     }
 }
