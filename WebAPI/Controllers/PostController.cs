@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
             _postService = postService;
         }
 
-        [SwaggerOperation(Summary = "Retrieves all events")]
+        [SwaggerOperation(Summary = "Retrieves all posts")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
             return Ok(posts);
         }
 
-        [SwaggerOperation(Summary = "Retrieves a specific event by unique id")]
+        [SwaggerOperation(Summary = "Retrieves a specific posts by unique id")]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -39,7 +39,7 @@ namespace WebAPI.Controllers
             }
             return Ok(post);
         }
-        [SwaggerOperation(Summary = "Create a new event")]
+        [SwaggerOperation(Summary = "Create a new post")]
         [HttpPost]
         public IActionResult Create(CreatePostDto newPost)
         {
@@ -53,7 +53,7 @@ namespace WebAPI.Controllers
             _postService.UpdatePost(updatePost);
             return NoContent();
         }
-        [SwaggerOperation(Summary ="Delete a specific event")]
+        [SwaggerOperation(Summary ="Delete a specific post")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
