@@ -1,5 +1,5 @@
 # SimpleAPI
- Organizing and saving simple API for meetings / events / seminars
+Simple API for organizate meetings / events / seminars
 
 # Hi there, I'm Lukas. Hope you enjoy my simple API ;) 
 
